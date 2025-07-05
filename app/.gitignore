@@ -1,0 +1,47 @@
+# Android Studio & Gradle
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# System junk
+.DS_Store
+
+# Build output
+/build
+grpc/build/
+grpc/app/build/
+grpc/app/release/
+captures/
+/captures
+.externalNativeBuild
+.cxx
+
+# Firebase functions
+functions/
+
+# Firebase config
+google-services.json
+firebase-config.js
+firebase.json
+.firebaserc
+*.firebaserc
+
+# Secrets & environments
+.env
+.env.*
+*.key
+*.pem
+*.jks
+*.crt
+
+# Logs
+*.log
+
+# OS/editor junk
+*.swp

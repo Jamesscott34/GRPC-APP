@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Good Riddance Pest Control"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Grpc"
+        tools:targetApi="31">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Company Report Activity -->
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ReportActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ReportViewActivity"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".CreateReportActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ReportSelectionActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".PDFSelectionActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".QuotationViewActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".FollowUpActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".BirdQuotationActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ContractsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ViewContractActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".AddContractActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".QuotesActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".General8ptActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".General6ptActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".General4ptActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".General12ptActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".LeadsSelectionActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ViewLeadsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".GenerateLeadsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ServiceAgreementActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".JobsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".AddJobsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ViewJobActivity"
+            android:exported="true"/>
+
+        <activity android:name=".RodentRoutineActivity"
+            android:exported="false"/>
+
+        <activity android:name=".RodentActivityExternalRoutine"
+            android:exported="false"/>
+
+        <activity android:name=".RodentCallOutExternalActivity"
+            android:exported="false"/>
+
+        <activity android:name=".RodentCallOutActivity"
+            android:exported="false"/>
+
+        <activity android:name=".RodentInitialActivity"
+            android:exported="false"/>
+
+        <activity android:name=".RodentActivityRoutine"
+            android:exported="false"/>
+
+        <activity android:name=".RodentJobActivity"
+            android:exported="false"/>
+
+        <activity android:name=".ServiceAgreementViewActivity"
+            android:exported="true"/>
+
+        <activity android:name=".FolderContentsActivity"
+            android:exported="true"/>
+
+        <activity android:name=".MessagingActivity"
+            android:exported="true"/>
+
+        <activity android:name=".StoredReportsActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AddMapActivity"
+            android:exported="true"/>
+
+        <activity android:name=".GeneralQuotationActivity"
+            android:exported="true"/>
+
+        <activity android:name=".EnvironmentSelectionActivity"
+            android:exported="true"/>
+
+        <activity android:name=".NonToxERAActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ToxicERAActivity"
+            android:exported="true"/>
+
+
+        <activity android:name=".ERAViewActivity"
+            android:exported="true"/>
+
+
+
+        <activity android:name=".GeneralReportActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AddManagmentJobsActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ViewManagmentJobActivity"
+            android:exported="true"/>
+
+
+
+
+        <!-- FCM Push Notification Service -->
+        <service
+            android:name="FirebaseMessagingServiceGRPC"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+        <!-- FileProvider Setup -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+
+
+        </provider>
+
+    </application>
+</manifest>

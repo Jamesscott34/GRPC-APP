@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bk">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button to create a new report -->
+    <Button
+        android:id="@+id/buttonViewReports"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Reports"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonStoredReports"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Stored Reports"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to view quotations -->
+    <Button
+        android:id="@+id/buttonViewQuotation"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Quotations"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to view quotations -->
+    <Button
+        android:id="@+id/buttonViewAgreements"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Service Agreements"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonViewERA"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="ERA"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

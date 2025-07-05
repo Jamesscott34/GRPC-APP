@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bk">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button to create a new report -->
+    <Button
+        android:id="@+id/buttonCreateReport"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Report"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/buttonGenericReport"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Generic Report"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to create a quotation -->
+    <Button
+        android:id="@+id/buttonCreateQuotation"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Contracts Quotation"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to create a bird quotation -->
+    <Button
+        android:id="@+id/buttonCreateBirdQuotation"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Bird Quotation"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCreateGeneralQuotation"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="Generic Quote"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

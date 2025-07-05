@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Add Contract Button -->
+        <Button
+            android:id="@+id/AddContractButton"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:text="Add Contract"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- View Contract Button -->
+        <Button
+            android:id="@+id/ViewContractButton"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:text="View Contracts"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+
+</FrameLayout>
